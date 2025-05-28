@@ -1,0 +1,125 @@
+🧠 AI Image & Video Generation – Tools and Workflow Documentation
+This document outlines how I used a wide range of tools and techniques to create high-quality, AI-generated images and videos during my internship. My goal was to experiment with Generative AI using both local systems and cloud platforms, integrating multiple workflows for a seamless media creation pipeline.
+
+🖼️ Image Generation – Tools & Workflows
+1. ComfyUI (Local Setup)
+I installed and configured ComfyUI, a powerful node-based interface for Stable Diffusion, to build custom image generation workflows. This setup allowed me to:
+
+Generate high-resolution images using Stable Diffusion XL (SDXL)
+
+Apply custom-trained LoRA models for stylization
+
+Automate batch tasks like prompt variation and seed randomization
+
+Export workflows for API integration and frontend use
+
+Tools Used: ComfyUI, SDXL, LoRA Checkpoints, PNGInfo Inspector
+
+2. Fooocus
+Fooocus provided a fast and flexible SDXL-based environment to create images with stylistic presets and built-in enhancements. I used it to:
+
+Rapidly prototype image ideas using simplified UI
+
+Experiment with artistic prompts
+
+Enhance output using built-in upscalers
+
+Tools Used: Fooocus, SDXL Turbo, Fooocus Style Presets
+
+3. AUTOMATIC1111 Web UI
+To push image generation further, I deployed AUTOMATIC1111 on my local machine with several extensions. This allowed me to:
+
+Control poses and depth using ControlNet
+
+Train personalized concepts using DreamBooth
+
+Generate tiled images with Tiled Diffusion
+
+Compare prompt effects using XYZ Plotting
+
+Tools Used: A1111, ControlNet, DreamBooth, Tiled Diffusion
+
+4. Third-Party APIs and Online Platforms
+When GPU resources were limited, I utilized online tools and APIs to test and deploy ideas:
+
+DALL·E 3 API for clean, prompt-specific image generation
+
+RunwayML for concept testing using cloud-based SDXL
+
+Replicate API for niche models like “OpenJourney” or “AnythingV5”
+
+Mage.space, Leonardo.AI, and NightCafe for GPU-free outputs
+
+Tools Used: DALL·E, RunwayML, Replicate API, NightCafe, Leonardo.AI
+
+🎥 Video Generation – Tools & Workflows
+1. Deforum (Local Video Diffusion)
+I used Deforum with Stable Diffusion to create animated visual loops. This involved:
+
+Writing keyframes for zoom, rotation, and movement
+
+Generating frame sequences with creative prompt blending
+
+Compiling sequences into video clips using FFMPEG
+
+Tools Used: Deforum, A1111, FFMPEG, Prompt Travel Scripts
+
+2. Runway ML Gen-2
+Runway’s Gen-2 model allowed me to create short cinematic videos from images and text. I:
+
+Used "Text to Video" and "Image to Video" workflows
+
+Added motion, background transitions, and visual depth
+
+Created 3–8 second clips from concept art and story scenes
+
+Tools Used: RunwayML Gen-2, AI Motion Brush, Background Animator
+
+3. Pika Labs & Kaiber.ai
+To add stylistic storytelling and music syncing, I used:
+
+Pika Labs to animate AI-generated stills into expressive visuals
+
+Kaiber.ai to apply motion effects and generate camera panning, zoom, and transitions synced with narration
+
+Tools Used: Pika Labs, Kaiber, Image2Video Engines
+
+4. TTS Voice, Music, and Final Editing
+I combined the visual assets with voiceovers and background scores:
+
+TTS Voice: Used Tortoise TTS and ElevenLabs to generate realistic narration
+
+Music: Composed soundtracks using AIVA and Soundraw
+
+Final Editing: Assembled everything using CapCut, Adobe Premiere, or Descript for polish
+
+Tools Used: Tortoise TTS, ElevenLabs, AIVA, CapCut, Adobe Premiere
+
+🔁 Complete Integration Pipeline
+Here’s a simplified representation of how my full process flows from prompt to polished video:
+
+bash
+Copy
+Edit
+Prompt → ComfyUI/Fooocus → Image Output
+Image + TTS/Audio → Deforum or RunwayML → Video Clip
+Video + Music + Effects → Final Editing in CapCut or Premiere
+📁 Suggested Project Directory
+bash
+Copy
+Edit
+📁 /images              # AI-generated image assets
+📁 /videos              # Final and intermediate video outputs
+📁 /workflows           # ComfyUI workflows (.json)
+📁 /tts                 # Voiceovers
+📁 /music               # Background tracks
+📁 /final_edits         # Complete edited projects
+📄 README.md            # This file
+🧠 Summary
+Through this project work, I gained deep experience in integrating generative AI tools across the full media pipeline – from image generation and animation to sound design and final editing. These workflows were designed to scale for real-world creative projects like:
+
+AI-generated storytelling
+
+Marketing visuals
+
+Creative automation systems
