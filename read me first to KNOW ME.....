@@ -1,0 +1,114 @@
+
+# 🧠 AI Image & Video Generation – Tools and Workflow Documentation
+
+This README outlines the tools, platforms, and methods I used during my AI internship to create high-quality generative images and videos. My work combined local tools, APIs, and creative software for producing fully AI-generated media experiences.
+
+---
+
+## 🖼️ Image Generation – Tools & Workflow
+
+### 1. Local ComfyUI
+- Installed and customized ComfyUI on local machine (Windows/Linux).
+- Built modular workflows for:
+  - Text-to-Image
+  - Inpainting / Outpainting
+  - Prompt-controlled Variants
+- Used SDXL + LoRA models.
+- Exported workflows for use in API automation.
+
+**Tools:** ComfyUI, SDXL, LoRA, PNGInfo
+
+---
+
+### 2. Fooocus
+- Installed Fooocus for SDXL-based generation with style presets.
+- Used auto-prompting and quality enhancement for faster ideation.
+
+**Tools:** Fooocus, SDXL Turbo
+
+---
+
+### 3. AUTOMATIC1111 Web UI
+- Ran Stable Diffusion using A1111 WebUI.
+- Enabled extensions:
+  - ControlNet
+  - DreamBooth
+  - Tiled Diffusion
+- Used Prompt Travel & Batch Plotting.
+
+**Tools:** A1111, ControlNet, DreamBooth
+
+---
+
+### 4. Third-Party APIs
+- DALL·E 3 for ultra-detailed text-to-image.
+- RunwayML & Replicate API for quick testing with pre-trained models.
+- Used NightCafe, Leonardo.AI for GPU-free concepts.
+
+**Tools:** DALL·E, RunwayML, Replicate API, Mage.Space
+
+---
+
+## 🎥 Video Generation – Tools & Workflow
+
+### 1. Deforum + Stable Diffusion (Local)
+- Animated scenes using Deforum with Stable Diffusion.
+- Controlled motion with keyframes and interpolation.
+- Assembled clips with FFMPEG.
+
+**Tools:** Deforum, A1111, FFMPEG
+
+---
+
+### 2. RunwayML
+- Used Gen-2 to generate videos from prompts and static images.
+- Added motion brush, background animation, face edits.
+
+**Tools:** RunwayML Gen-2, Motion Brush
+
+---
+
+### 3. Pika Labs & Kaiber
+- Pika Labs for stylized storytelling.
+- Kaiber.ai to animate stills and sync to music/narration.
+
+**Tools:** Pika Labs, Kaiber
+
+---
+
+### 4. TTS + Music + Video Editors
+- Voice: Tortoise TTS, ElevenLabs
+- Music: AIVA, Soundraw
+- Assembly: Adobe Premiere, CapCut, Descript
+
+---
+
+## 🔁 Integration Pipeline
+
+```bash
+Prompt -> ComfyUI/Fooocus/SDXL -> Image
+Image + TTS/Music -> Deforum/Runway -> Video
+Final Video -> Edited with CapCut / Descript / Premiere
+```
+
+---
+
+## 📁 Directory Suggestions
+
+```
+📁 /images
+📁 /videos
+📁 /workflows
+📁 /tts
+📁 /music
+📁 /final_edits
+📄 README.md
+```
+
+---
+
+## 🛠️ Summary
+
+This workflow enabled me to deliver complete AI-powered image and video content creation, useful in storytelling, marketing, and creative automation applications.
+
+---
